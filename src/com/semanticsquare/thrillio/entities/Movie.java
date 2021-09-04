@@ -1,5 +1,8 @@
 package com.semanticsquare.thrillio.entities;
 
+import com.semanticsquare.thrillio.constants.BookGenre;
+import com.semanticsquare.thrillio.constants.MovieGenre;
+
 import java.util.Arrays;
 
 public class Movie extends Bookmark {
@@ -58,5 +61,12 @@ public class Movie extends Bookmark {
                 ", genre='" + genre + '\'' +
                 ", imdbRating=" + imdbRating +
                 '}';
+    }
+
+    @Override
+    public boolean isKidFriendlyEligible() {
+        if (getTitle().contains("porn") || genre.contains("porn") || genre.contains(MovieGenre.THRILLERS) || genre.contains(MovieGenre.HORROR))
+            return false;
+        return true;
     }
 }
