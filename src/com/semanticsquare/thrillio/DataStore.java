@@ -36,11 +36,11 @@ public class DataStore {
     }
 
     private static void loadUsers() {
-        users[0] = UserManager.getInstance().createUser(1000, "user0@semanticsquare.com", "test", "John", Gender.MALE, UserType.USER);
-        users[1] = UserManager.getInstance().createUser(1001, "user1@semanticsquare.com", "test", "Sam", Gender.MALE, UserType.USER);
-        users[2] = UserManager.getInstance().createUser(1002, "user2@semanticsquare.com", "test", "Anita", Gender.FEMALE, UserType.EDITOR);
-        users[3] = UserManager.getInstance().createUser(1003, "user3@semanticsquare.com", "test", "Sara", Gender.FEMALE, UserType.EDITOR);
-        users[4] = UserManager.getInstance().createUser(1004, "user4@semanticsquare.com", "test", "Dheeru", Gender.MALE, UserType.CHIEF_EDITOR);
+        users[0] = UserManager.getInstance().createUser(1000, "user0@semanticsquare.com", "test", "John", "M", Gender.MALE, UserType.USER);
+        users[1] = UserManager.getInstance().createUser(1001, "user1@semanticsquare.com", "test", "Sam", "M",Gender.MALE, UserType.USER);
+        users[2] = UserManager.getInstance().createUser(1002, "user2@semanticsquare.com", "test", "Anita", "M",Gender.FEMALE, UserType.EDITOR);
+        users[3] = UserManager.getInstance().createUser(1003, "user3@semanticsquare.com", "test", "Sara", "M",Gender.FEMALE, UserType.EDITOR);
+        users[4] = UserManager.getInstance().createUser(1004, "user4@semanticsquare.com", "test", "Dheeru", "M",Gender.MALE, UserType.CHIEF_EDITOR);
     }
 
     private static void loadWeblinks() {
