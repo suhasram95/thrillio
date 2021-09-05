@@ -18,8 +18,9 @@ public class Launch {
         bookmarks = BookmarkManager.getInstance().getBookmarks();
 
 //        System.out.println("\nPrinting data ...");
-//        printUserData();
-//        printBookmarkData();
+        printUserData();
+        printBookmarkData();
+        start();
     }
 
     private static void start() {
